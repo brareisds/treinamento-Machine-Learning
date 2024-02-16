@@ -129,8 +129,6 @@ diretorio_imagens = "PKLot/PKLotSegmented"
 arquivo_csv = 'histograma.csv'
 
 
-
-
 # Abre o arquivo CSV em modo de escrita
 with open(arquivo_csv, mode='w', newline='') as file:
     writer = csv.writer(file, delimiter=',')
