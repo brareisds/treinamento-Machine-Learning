@@ -74,15 +74,13 @@ print("LBP Program is finished")
 
 
 DIR = 'PKLot/PKLotSegmented'
-# Nome do arquivo CSV
 arquivo_csv = 'dados_hist.csv'
 
-# Abre o arquivo CSV em modo de escrita
 with open(arquivo_csv, mode='w', newline='') as file:
     writer = csv.writer(file, delimiter=',')
     for root, _, files in os.walk(DIR):
         for filename in files:
-            path = os.path.join(root, filename)  # Caminho completo da imagem
+            path = os.path.join(root, filename) 
             print(path)
             
             img_bgr = cv2.imread(path, 1) 
